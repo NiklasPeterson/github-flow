@@ -155,7 +155,7 @@ If you receive feedback and continue to improve your changes, you can continue t
 
 ![6](6.png)
 
-And start over ;)
+And start over with an new feature_branch ;)
 
 
 
