@@ -2,14 +2,26 @@
 
 Table of contents
 
-[Usefull info](https://github.com/NiklasPeterson/GitHubFlow#useful-info) <br />
-[Getting started](https://github.com/NiklasPeterson/GitHubFlow#getting-started) <br />
-[0. Sprint Start](https://github.com/NiklasPeterson/GitHubFlow#0-sprint-start) <br />
-[1. Develop phase](https://github.com/NiklasPeterson/GitHubFlow#1-develop-phase) <br />
-[2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
-[3. Release phase](https://github.com/NiklasPeterson/GitHubFlow#3-release-phase) <br />
-
-#1-develop-phase
+- [Usefull info](https://github.com/NiklasPeterson/GitHubFlow#useful-info) <br />
+  - [List of locked branches](https://github.com/NiklasPeterson/GitHubFlow#list-of-locked-branches) <br />
+  - [List of prefixes for branch names:](https://github.com/NiklasPeterson/GitHubFlow#list-of-prefixes-for-branch-names) <br />
+- [Getting started](https://github.com/NiklasPeterson/GitHubFlow#getting-started) <br />
+- [0. Sprint Start](https://github.com/NiklasPeterson/GitHubFlow#0-sprint-start) <br />
+- [1. Develop phase](https://github.com/NiklasPeterson/GitHubFlow#1-develop-phase) <br />
+  - [1.1 Create feature branch](https://github.com/NiklasPeterson/GitHubFlow#1-1-create-feature-branch) <br />
+  - [1.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#1-2-make-changes) <br />
+  - [1.3 Open a Pull Request](https://github.com/NiklasPeterson/GitHubFlow#1-3-open-a-pull-request) <br />
+  - [1.4 Review and discuss your code](https://github.com/NiklasPeterson/GitHubFlow#1-4-review-and-discuss-your-code) <br />
+  - [1.5 Test](https://github.com/NiklasPeterson/GitHubFlow#1-5-test) <br />
+  - [1.6 Merge feature_branch into sprint_branch](https://github.com/NiklasPeterson/GitHubFlow#1-6-merge-feature_branch-into-sprint_branch) <br />
+- [2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
+  - [2.1 Deploy to staging env](https://github.com/NiklasPeterson/GitHubFlow#2-1-deploy-to-staging-env) <br />
+  - [2.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#2-2-make-changes) <br />
+  - [2.3 Merge to staging](https://github.com/NiklasPeterson/GitHubFlow#2-3-merge-to-staging) <br />
+- [3. Release phase](https://github.com/NiklasPeterson/GitHubFlow#3-release-phase) <br />
+  - [3.1 Deploy to live env](https://github.com/NiklasPeterson/GitHubFlow#deploy-to-live-env) <br />
+  - [3.2 Merge to main/master](https://github.com/NiklasPeterson/GitHubFlow#merge-to-mainmaster) <br />
+- [Hotfix](https://github.com/NiklasPeterson/GitHubFlow#hotfix)
 
 
 ## Usefull info
@@ -167,17 +179,17 @@ And start over ;)
 
 ## 2. Staging Phase
 
-### Deploy to staging env
+### 2.1 Deploy to staging env
 
 When Sprint is done and ready for being tested on staging it's time to create a PR from sprint_x to staging. If all checks are successful we can trigger a deployment from GitHub Actions.
 
 It's now time to test all new features on staging env
 
-### Make changes
+### 2.2 Make changes
 
 If we encounter any bugs we can make adjustments and fixes to the sprint_x branch and 
 
-### Merge to staging
+### 2.3 Merge to staging
 
 After bugfixes and additional testing on staging env is done it's time to merge the PR from `sprint_x` into `staging `.
 
