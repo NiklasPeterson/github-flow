@@ -1,5 +1,16 @@
 # Working with Pull Requests (GitHub Flow - Modified)
 
+Table of contents
+
+[Usefull info](https://github.com/NiklasPeterson/GitHubFlow#useful-info) <br />
+[Getting started](https://github.com/NiklasPeterson/GitHubFlow#getting-started) <br />
+[0. Sprint Start](https://github.com/NiklasPeterson/GitHubFlow#0-sprint-start) <br />
+[1. Develop phase](https://github.com/NiklasPeterson/GitHubFlow#1-develop-phase) <br />
+[2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
+[3. Release phase](https://github.com/NiklasPeterson/GitHubFlow#3-release-phase) <br />
+
+#1-develop-phase
+
 
 ## Usefull info
 
