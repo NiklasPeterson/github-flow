@@ -81,7 +81,7 @@ Once the sprint is defined and is about to start. Create a new branch form `main
 
 While the sprint is active we are working in feature branches
 
-### Create feature branch
+### 1.1 Create feature branch
 
 Now we are ready to beging branching out from the `sprint_x` branch by creating feature branches named `feature_<feature-name>` and switch to it using
 `git checkout -b feature_<feature-name>`
@@ -96,7 +96,7 @@ a branch is _not available to others_ unless you push the branch to your remote 
 
 
 
-### Make changes
+### 1.2 Make changes
 
 ![2](2.png)
 
@@ -118,7 +118,7 @@ Each commit has an associated commit message, which is a description explaining 
 
 
 
-### Open a Pull Request
+### 1.3 Open a Pull Request
 
 ![3](3.png)
 
@@ -134,7 +134,7 @@ By using GitHub's @mention system in your Pull Request message, you can ask for 
 
 
 
-### Review and discuss your code
+### 1.4 Review and discuss your code
 
 ![4](4.png)
 
@@ -152,7 +152,7 @@ If you receive feedback and continue to improve your changes, you can continue t
 
 
 
-### Test
+### 1.5 Test
 
 ![5](5.png)
 
@@ -165,7 +165,7 @@ Once your `sprint_x` branch pull request has been reviewed and the branch passes
 
 
 
-### Merge feature_branch into sprint_branch
+### 1.6 Merge feature_branch into sprint_branch
 
 ![6](6.png)
 
@@ -203,7 +203,7 @@ After bugfixes and additional testing on staging env is done it's time to merge 
 
 ## 3. Release Phase
 
-### Deploy to live env
+### 3.1 Deploy to live env
 
 ![5](5.png)
 
@@ -220,7 +220,7 @@ If any issues arise, you can undo the changes by deploying the master branch int
 > **If your branch causes issues, you should fix them in your branch before merging with the main/master.**  
 > With GitHub, you can deploy from a branch for final testing in production before merging to main.
 
-### Merge to main/master
+### 3.2 Merge to main/master
 
 ![6](6.png)
 
