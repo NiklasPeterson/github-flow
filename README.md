@@ -177,7 +177,7 @@ If we encounter any bugs we can make adjustments and fixes to the sprint_x branc
 
 ### 2.3 Merge to staging
 
-After bugfixes and additional testing on staging env is done it's time to merge the PR from `sprint_x` into `staging `.
+After bugfixes and additional testing on staging env is done it's time to merge the PR from `sprint_x` into `staging`.
 
 **Important! Don't delete the branch yet!**
 
