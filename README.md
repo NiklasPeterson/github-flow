@@ -12,8 +12,7 @@ Table of contents
   - [1.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#12-make-changes) <br />
   - [1.3 Open a Pull Request](https://github.com/NiklasPeterson/GitHubFlow#13-open-a-pull-request) <br />
   - [1.4 Review and discuss your code](https://github.com/NiklasPeterson/GitHubFlow#14-review-and-discuss-your-code) <br />
-  - [1.5 Test](https://github.com/NiklasPeterson/GitHubFlow#15-test) <br />
-  - [1.6 Merge feature_branch into sprint_branch](https://github.com/NiklasPeterson/GitHubFlow#16-merge-feature_branch-into-sprint_branch) <br />
+  - [1.5 Merge feature_branch into sprint_branch](https://github.com/NiklasPeterson/GitHubFlow#15-merge-feature_branch-into-sprint_branch) <br />
 - [2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
   - [2.1 Deploy to staging env](https://github.com/NiklasPeterson/GitHubFlow#21-deploy-to-staging-env) <br />
   - [2.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#22-make-changes) <br />
@@ -152,20 +151,7 @@ If you receive feedback and continue to improve your changes, you can continue t
 
 
 
-### 1.5 Test
-
-![5](5.png)
-
-Once your `sprint_x` branch pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing main branch into production.
-
-> **If your branch causes issues, you should fix them in your branch before merging with the master/main branch.**  
-> With GitHub, you can deploy from a branch for final testing in production before merging to main.
-
-------
-
-
-
-### 1.6 Merge feature_branch into sprint_branch
+### 1.5 Merge feature_branch into sprint_branch
 
 ![6](6.png)
 
