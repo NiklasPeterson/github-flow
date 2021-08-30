@@ -12,7 +12,7 @@ Table of contents
   - [1.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#12-make-changes) <br />
   - [1.3 Open a Pull Request](https://github.com/NiklasPeterson/GitHubFlow#13-open-a-pull-request) <br />
   - [1.4 Review and discuss your code](https://github.com/NiklasPeterson/GitHubFlow#14-review-and-discuss-your-code) <br />
-  - [1.5 Merge feature_branch into sprint_branch](https://github.com/NiklasPeterson/GitHubFlow#15-merge-feature_branch-into-sprint_branch) <br />
+  - [1.5 Merge feature/branch into sprint/branch](https://github.com/NiklasPeterson/GitHubFlow#15-merge-feature/branch-into-sprint/branch) <br />
 - [2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
   - [2.1 Deploy to staging env](https://github.com/NiklasPeterson/GitHubFlow#21-deploy-to-staging-env) <br />
   - [2.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#22-make-changes) <br />
@@ -30,7 +30,7 @@ Table of contents
 - master/main (permanent)
 - staging (permanent)
 - dev/develop (permanent)
-- sprint_*
+- sprint/x
 
 > These branches have lock protection, which means that changes/merges can only be committed with PR (Pull requests) and not made directly on the locked branch.
 
@@ -38,15 +38,15 @@ Table of contents
 
 ### List of prefixes for branch names:
 
-- sprint_x = larger branch, suited to only exist while the sprint is active. (merges with PR into `staging`, `develop` & `main/master`when done)
-- feature_x = smaller to medium branches for working in (merges with PR into sprint_x when done)
-- update_x = this is for branches that only contains updates of dependencies
-- hotfix_x = urgent fix that needs to go live ASAP (See how to work with hotfixes under the Hotfix Section)
+- sprint/x = larger branch, suited to only exist while the sprint is active. (merges with PR into `staging`, `develop` & `main/master`when done)
+- feature/x = smaller to medium branches for working in (merges with PR into sprint/x when done)
+- update/x = this is for branches that only contains updates of dependencies
+- hotfix/x = urgent fix that needs to go live ASAP (See how to work with hotfixes under the Hotfix Section)
 
 
 > Branching is a core concept in Git, and the entire GitHub flow is based upon it. There's only one rule: anything in the `main` branch is always deployable.
 >
-> Because of this, it's extremely important that your new branch is created off of main when working on a feature or a fix. Your branch name should be descriptive (e.g. `feature_formblock`, `hotfix_form-validation`) so that others can see what is being worked on.
+> Because of this, it's extremely important that your new branch is created off of main when working on a feature or a fix. Your branch name should be descriptive (e.g. `feature/formblock`, `hotfix/form-validation`) so that others can see what is being worked on.
 
 
 
@@ -68,7 +68,7 @@ The *master/main* branch is the “default” branch when you create a repositor
 
 ## 0. Sprint Start
 
-Once the sprint is defined and is about to start. Create a new branch form `main/master` for the sprint and name it`sprint_<sprint-name>`
+Once the sprint is defined and is about to start. Create a new branch form `main/master` for the sprint and name it`sprint/x`
 
 
 
@@ -82,9 +82,9 @@ While the sprint is active we are working in feature branches
 
 ### 1.1 Create feature branch
 
-Now we are ready to beging branching out from the `sprint_x` branch by creating feature branches named `feature_<feature-name>` and switch to it using
-`git checkout -b feature_<feature-name>`
-a branch is _not available to others_ unless you push the branch to your remote repository
+Now we are ready to beging branching out from the `sprint/x` branch by creating feature branches named `feature/x` and switch to it using
+`git checkout -b feature/x`
+a branch is /not available to others/ unless you push the branch to your remote repository
 `git push origin <branch>`
 
 > **Tip:** Make a separate branch for each set of unrelated changes. This makes it easier for reviewers to give feedback. It also makes it easier for you and future collaborators to understand the changes and to revert or build on them.
@@ -121,7 +121,7 @@ Each commit has an associated commit message, which is a description explaining 
 
 ![3](3.png)
 
-Once you feel that your work related to the feature_x branch is done and ready for code review, it's time to create a Pull Request. A Pull Request notifies people you have changes ready for them to consider or review.
+Once you feel that your work related to the feature/x branch is done and ready for code review, it's time to create a Pull Request. A Pull Request notifies people you have changes ready for them to consider or review.
 
 Adding Reviewers: The persons who are going to do a code review and test your PR (1-2 that has relevance to the work you have done) Adding Assignees: Yourself and your co-worker (the people who are working on the branch)
 
@@ -151,11 +151,11 @@ If you receive feedback and continue to improve your changes, you can continue t
 
 
 
-### 1.5 Merge feature_branch into sprint_branch
+### 1.5 Merge feature/branch into sprint/branch
 
 ![6](6.png)
 
-And start over with an new feature_branch ;)
+And start over with an new feature/branch ;)
 
 
 
@@ -167,17 +167,17 @@ And start over with an new feature_branch ;)
 
 ### 2.1 Deploy to staging env
 
-When Sprint is done and ready for being tested on staging it's time to create a PR from sprint_x to staging. If all checks are successful we can trigger a deployment from GitHub Actions.
+When Sprint is done and ready for being tested on staging it's time to create a PR from sprint/x to staging. If all checks are successful we can trigger a deployment from GitHub Actions.
 
 It's now time to test all new features on staging env
 
 ### 2.2 Make changes
 
-If we encounter any bugs we can make adjustments and fixes to the sprint_x branch and 
+If we encounter any bugs we can make adjustments and fixes to the sprint/x branch and 
 
 ### 2.3 Merge to staging
 
-After bugfixes and additional testing on staging env is done it's time to merge the PR from `sprint_x` into `staging`.
+After bugfixes and additional testing on staging env is done it's time to merge the PR from `sprint/x` into `staging`.
 
 **Important! Don't delete the branch yet!**
 
@@ -193,7 +193,7 @@ After bugfixes and additional testing on staging env is done it's time to merge 
 
 ![5](5.png)
 
-Once we have tested everything in the staging env we can now create a PR from sprint_x to the main/master branch. if all our tests are successful, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing main branch into production.
+Once we have tested everything in the staging env we can now create a PR from sprint/x to the main/master branch. if all our tests are successful, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing main branch into production.
 
 
 
@@ -226,7 +226,7 @@ Once merged, Pull Requests preserve a record of the historical changes to your c
 
 ## Hotfix
 
-- Create a new branch (`hotfix_x`) from `master`.
+- Create a new branch (`hotfix/x`) from `master`.
 
 - Create one PR from `hotfix` to `master` and have someone review it to validate the fix
 
