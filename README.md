@@ -29,7 +29,6 @@ Table of contents
 
 - master/main (permanent)
 - staging (permanent)
-- dev/develop (permanent)
 - sprint/x
 
 > These branches have lock protection, which means that changes/merges can only be committed with PR (Pull requests) and not made directly on the locked branch.
@@ -38,7 +37,7 @@ Table of contents
 
 ### List of prefixes for branch names:
 
-- sprint/x = larger branch, suited to only exist while the sprint is active. (merges with PR into `staging`, `develop` & `main/master`when done)
+- sprint/x = larger branch, suited to only exist while the sprint is active. (merges with PR into `staging` & `main/master`when done)
 - feature/x = smaller to medium branches for working in (merges with PR into sprint/x when done)
 - update/x = this is for branches that only contains updates of dependencies
 - hotfix/x = urgent fix that needs to go live ASAP (See how to work with hotfixes under the Hotfix Section)
@@ -228,12 +227,10 @@ Once merged, Pull Requests preserve a record of the historical changes to your c
 
 - Create a new branch (`hotfix/x`) from `master`.
 
-- Create one PR from `hotfix` to `master` and have someone review it to validate the fix
-
-- Once it's merged into `master`, create another PR from `hotfix` to `develop`
-
-  and see if you run into merge conflicts
+- Create one PR from `hotfix` to `master` and see if you run into merge conflicts
 
   - If that's the case, resolve the merge conflicts so the PR ends up in a state to be merged, and have someone review the PR
 
 - If there are no merge conflicts, then have someone review the PR
+
+- Deploy the hotfix and merge the PR
