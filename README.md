@@ -27,9 +27,10 @@ Table of contents
 
 ### List of locked branches
 
-- master/main (permanent)
-- staging (permanent)
+- main (permanent)
+- feature/x
 - sprint/x
+- release/x
 
 > These branches have lock protection, which means that changes/merges can only be committed with PR (Pull requests) and not made directly on the locked branch.
 
