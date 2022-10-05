@@ -3,23 +3,23 @@
 Table of contents
 
 - [Usefull info](https://github.com/NiklasPeterson/GitHubFlow#useful-info) <br />
-  - [List of locked branches](https://github.com/NiklasPeterson/GitHubFlow#list-of-locked-branches) <br />
-  - [List of prefixes for branch names:](https://github.com/NiklasPeterson/GitHubFlow#list-of-prefixes-for-branch-names) <br />
+ - [List of locked branches](https://github.com/NiklasPeterson/GitHubFlow#list-of-locked-branches) <br />
+ - [List of prefixes for branch names:](https://github.com/NiklasPeterson/GitHubFlow#list-of-prefixes-for-branch-names) <br />
 - [Getting started](https://github.com/NiklasPeterson/GitHubFlow#getting-started) <br />
 - [0. Sprint Start](https://github.com/NiklasPeterson/GitHubFlow#0-sprint-start) <br />
 - [1. Develop phase](https://github.com/NiklasPeterson/GitHubFlow#1-develop-phase) <br />
-  - [1.1 Create feature branch](https://github.com/NiklasPeterson/GitHubFlow#11-create-feature-branch) <br />
-  - [1.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#12-make-changes) <br />
-  - [1.3 Open a Pull Request](https://github.com/NiklasPeterson/GitHubFlow#13-open-a-pull-request) <br />
-  - [1.4 Review and discuss your code](https://github.com/NiklasPeterson/GitHubFlow#14-review-and-discuss-your-code) <br />
-  - [1.5 Merge feature/branch into sprint/branch](https://github.com/NiklasPeterson/GitHubFlow#15-merge-feature/branch-into-sprint/branch) <br />
+ - [1.1 Create feature branch](https://github.com/NiklasPeterson/GitHubFlow#11-create-feature-branch) <br />
+ - [1.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#12-make-changes) <br />
+ - [1.3 Open a Pull Request](https://github.com/NiklasPeterson/GitHubFlow#13-open-a-pull-request) <br />
+ - [1.4 Review and discuss your code](https://github.com/NiklasPeterson/GitHubFlow#14-review-and-discuss-your-code) <br />
+ - [1.5 Merge feature/branch into sprint/branch](https://github.com/NiklasPeterson/GitHubFlow#15-merge-feature/branch-into-sprint/branch) <br />
 - [2. Staging phase](https://github.com/NiklasPeterson/GitHubFlow#2-staging-phase) <br />
-  - [2.1 Deploy to staging env](https://github.com/NiklasPeterson/GitHubFlow#21-deploy-to-staging-env) <br />
-  - [2.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#22-make-changes) <br />
-  - [2.3 Merge to staging](https://github.com/NiklasPeterson/GitHubFlow#23-merge-to-staging) <br />
+ - [2.1 Deploy to staging env](https://github.com/NiklasPeterson/GitHubFlow#21-deploy-to-staging-env) <br />
+ - [2.2 Make changes](https://github.com/NiklasPeterson/GitHubFlow#22-make-changes) <br />
+ - [2.3 Merge to staging](https://github.com/NiklasPeterson/GitHubFlow#23-merge-to-staging) <br />
 - [3. Release phase](https://github.com/NiklasPeterson/GitHubFlow#3-release-phase) <br />
-  - [3.1 Deploy to live env](https://github.com/NiklasPeterson/GitHubFlow#31-deploy-to-live-env) <br />
-  - [3.2 Merge to main/master](https://github.com/NiklasPeterson/GitHubFlow#32-merge-to-mainmaster) <br />
+ - [3.1 Deploy to live env](https://github.com/NiklasPeterson/GitHubFlow#31-deploy-to-live-env) <br />
+ - [3.2 Merge to main/master](https://github.com/NiklasPeterson/GitHubFlow#32-merge-to-mainmaster) <br />
 - [Hotfix](https://github.com/NiklasPeterson/GitHubFlow#hotfix)
 
 
@@ -36,7 +36,7 @@ Table of contents
 
 
 ### List of prefixes for branch names:
-- release/x = This is the branch that gets deployed to the different environments (`dev`/`staging`/`live`) depending on in which stage you are in.
+- release/x = This is the branch that gets deployed to the different environments (`dev`/`staging`/`live`) depending on which stage you are in.
 - sprint/x = larger branch, suited to only exist while the sprint is active. (merges with PR into `main` when done)
 - feature/x = smaller to medium branches for working in (merges with PR into a `sprint/x` or `release/x` branch when done)
 - hotfix/x = urgent fix that needs to go live ASAP (See how to work with hotfixes under the Hotfix Section)
@@ -67,7 +67,7 @@ The `main` branch is the “default” branch when you create a repository. We u
 
 ## 0. Sprint Start
 
-Once the sprint is defined and is about to start. Create a new branch form `main` for the sprint and name it `sprint/x`
+Once the sprint is defined and is about to start. Create a new branch from `main` for the sprint and name it `sprint/x`
 
 
 
@@ -79,9 +79,9 @@ Once the sprint is defined and is about to start. Create a new branch form `main
 
 While the sprint is active we are working in feature branches
 
-### 1.1 Create feature branch
+### 1.1 Create a feature branch
 
-Now we are ready to beging branching out from the `sprint/x` branch by creating feature branches named `feature/x` and switch to it using
+Now we are ready to begin branching out from the `sprint/x` branch by creating feature branches named `feature/x` and switching to it using
 `git checkout -b feature/x`
 a branch is /not available to others/ unless you push the branch to your remote repository
 `git push origin <branch>`
@@ -105,7 +105,7 @@ After the new `feature` branch is created, it is time to get to work. Make chang
 Adding commits keeps track of your work. Each commit should have a message explaining what has changed and why. Each commit becomes a part of the history of the branch, and a point you can revert to if you need to.
 
 
-> **Note:** By writing clear commit messages, you can make it easier for other people to follow along and provide feedback  
+> **Note:** By writing clear commit messages, you can make it easier for other people to follow along and provide feedback 
 
 
 
@@ -119,7 +119,7 @@ Adding commits keeps track of your work. Each commit should have a message expla
 
 Once you feel that your work related to the `feature/x` branch is done and ready for code review, it's time to create a `PR` (Pull Request). A PR lets people know you have changes ready for them to consider or review.
 
-Adding Reviewers: The persons who are going to do a code review and test your PR (1-2 that has relevance to the work you have done) Adding Assignees: Yourself and your co-worker (the people who are working on the branch)
+Adding Reviewers: The persons who are going to do a code review and test your PR (1-2 that have relevance to the work you have done) Adding Assignees: Yourself and your co-worker (the people who are working on the branch)
 
 By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams.
 
@@ -139,7 +139,7 @@ Once a Pull Request has been opened, the reviewers may have questions, comments,
 
 If you receive feedback and continue to improve your changes, you can continue to push to your branch in light of discussion and feedback about your commits. If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.
 
-> **Tip:** Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and another lightweight formatting.
+> **Tip:** Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.
 
 
 
@@ -151,7 +151,7 @@ If you receive feedback and continue to improve your changes, you can continue t
 
 ![6](6.png)
 
-And start over with an new feature/branch.
+And start over with a new feature/branch.
 
 
 
@@ -183,13 +183,13 @@ If we encounter any bugs we can make adjustments and fixes to the sprint/x branc
 
 ![5](5.png)
 
-Once we have tested everything in the `staging` env we can do a deploy to `live` environment to verify them in production. 
+Once we have tested everything in the `staging` env we can deploy to `live` environment to verify them in production. 
 
 GitHub allows you to deploy from a branch for final testing in production before merging with it into the main branch.
 
 So if your branch causes issues, you can either fix them in your PR or even roll it back by deploying the existing main branch into production.
 
-> **If your branch causes issues, you should fix them in your branch before merging with the main.**  
+> **If your branch causes issues, you should fix them in your branch before merging with the main.** 
 > With GitHub, you can deploy from a branch for final testing in production before merging to main.
 
 ### 3.2 Merge to main
@@ -206,7 +206,7 @@ Once merged, Pull Requests preserve a record of the historical changes to your c
 
 - Create one PR from `hotfix` to `main` and see if you run into merge conflicts
 
-  - If that's the case, resolve the merge conflicts so the PR ends up in a state to be merged, and have someone review the PR
+ - If that's the case, resolve the merge conflicts so the PR ends up in a state to be merged, and have someone review the PR
 
 - If there are no merge conflicts, then have someone review the PR
 
